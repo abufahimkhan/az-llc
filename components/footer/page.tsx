@@ -1,13 +1,12 @@
-import Image from 'next/image';
-import React from 'react';
-import { FaPhone, FaEnvelope } from 'react-icons/fa';
+import Image from "next/image";
+import React from "react";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-3 gap-8">
-
           {/* Section 1 */}
           <div className="lg:ml-2 border-b border-gray-100 py-8 lg:border-b-0 lg:border-r lg:py-16 lg:pe-16">
             <div className="text-teal-600 lg:block">
@@ -24,13 +23,30 @@ const Footer: React.FC = () => {
               <div>
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Home </a>
+                    <a
+                      href="#"
+                      className="text-gray-700 transition hover:opacity-75"
+                    >
+                      {" "}
+                      Home{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75">About Us </a>
+                    <a
+                      href="#"
+                      className="text-gray-700 transition hover:opacity-75"
+                    >
+                      About Us{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Services </a>
+                    <a
+                      href="#"
+                      className="text-gray-700 transition hover:opacity-75"
+                    >
+                      {" "}
+                      Services{" "}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -38,13 +54,30 @@ const Footer: React.FC = () => {
               <div>
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Careers</a>
+                    <a
+                      href="#"
+                      className="text-gray-700 transition hover:opacity-75"
+                    >
+                      {" "}
+                      Careers
+                    </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75">Resources </a>
+                    <a
+                      href="#"
+                      className="text-gray-700 transition hover:opacity-75"
+                    >
+                      Resources{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Contact Us </a>
+                    <a
+                      href="#"
+                      className="text-gray-700 transition hover:opacity-75"
+                    >
+                      {" "}
+                      Contact Us{" "}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -52,10 +85,21 @@ const Footer: React.FC = () => {
               <div>
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a href="/appointment" className="text-gray-700 transition hover:opacity-75"> Transportation to Medical Appointments </a>
+                    <a
+                      href="/appointment"
+                      className="text-gray-700 transition hover:opacity-75"
+                    >
+                      {" "}
+                      Transportation to Medical Appointments{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="/assistance" className="text-gray-700 transition hover:opacity-75">Assistance with Activities of Daily Living </a>
+                    <a
+                      href="/assistance"
+                      className="text-gray-700 transition hover:opacity-75"
+                    >
+                      Assistance with Activities of Daily Living{" "}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -64,13 +108,31 @@ const Footer: React.FC = () => {
             <div className="mt-8 border-t border-gray-100 pt-8">
               <ul className="flex flex-wrap gap-4 text-xs">
                 <li>
-                  <a href="#" className="text-gray-500 transition hover:opacity-75"> Terms & Conditions </a>
+                  <a
+                    href="#"
+                    className="text-gray-500 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Terms & Conditions{" "}
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-500 transition hover:opacity-75"> Privacy Policy </a>
+                  <a
+                    href="#"
+                    className="text-gray-500 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Privacy Policy{" "}
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-500 transition hover:opacity-75"> Cookies </a>
+                  <a
+                    href="#"
+                    className="text-gray-500 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Cookies{" "}
+                  </a>
                 </li>
               </ul>
             </div>
@@ -90,18 +152,28 @@ const Footer: React.FC = () => {
               <div className="flex flex-col items-start mb-8">
                 <div className="flex items-center mb-4">
                   <FaPhone className="text-teal-500 mr-3" />
-                  <a href="tel:+19255675766" className="text-gray-700 hover:text-teal-500">Call Us: +19255675766</a>
+                  <a
+                    href="tel:+19255675766"
+                    className="text-gray-700 hover:text-teal-500"
+                  >
+                    Call Us: +19255675766
+                  </a>
                 </div>
                 <div className="flex items-center mb-4">
                   <FaEnvelope className="text-teal-500 mr-3" />
-                  <a href="mailto:jamy88876@gmail.com" className="text-gray-700 hover:text-teal-500">Email Us: jamy88876@gmail.com</a>
+                  <a
+                    href="mailto:jamy88876@gmail.com"
+                    className="text-gray-700 hover:text-teal-500"
+                  >
+                    Email Us: jamy88876@gmail.com
+                  </a>
                 </div>
                 <div className="relative w-32 h-32">
                   <Image
                     src="/footer/qrcode.png"
                     alt="QR Code"
                     fill
-                    style={{ objectFit: 'contain' }}
+                    style={{ objectFit: "contain" }}
                   />
                 </div>
               </div>
@@ -122,8 +194,20 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-200 pt-8 text-center text-sm text-gray-600">
-          <p>&copy; {new Date().getFullYear()} Zayan Contracting LLC. All rights reserved.</p>
-          <p className="text-xs">Designed and developed by <a href="https://techwoozy.vercel.app/" className="text-teal-500 hover:underline">Techwoozy LLC</a></p>
+          <p>
+            &copy; {new Date().getFullYear()} Zayan Contracting LLC. All rights
+            reserved.
+          </p>
+          <p className="text-slate-500 text-xs">Designed By: Abu Fahim Khan</p>
+          <p className="text-xs">
+            Developed by{" "}
+            <a
+              href="https://techwoozy.vercel.app/"
+              className="text-teal-500 hover:underline"
+            >
+              Techwoozy LLC
+            </a>
+          </p>
         </div>
       </div>
     </footer>
